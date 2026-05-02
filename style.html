@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>La Mie Dorée — Boulangerie Artisanale</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='14' fill='%231A0A02'/><text x='50' y='74' text-anchor='middle' font-family='Georgia,serif' font-style='italic' font-size='64' fill='%23B8900A'>M</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <header id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="logo">
+        <svg class="logo-emblem" viewBox="0 0 28 46" width="15" height="24" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+          <rect x="12.5" y="16" width="3" height="28" rx="1.5"/>
+          <ellipse cx="14" cy="9" rx="4.5" ry="7"/>
+          <ellipse cx="8" cy="18" rx="4" ry="6.5" transform="rotate(-32 8 18)" opacity=".85"/>
+          <ellipse cx="20" cy="18" rx="4" ry="6.5" transform="rotate(32 20 18)" opacity=".85"/>
+          <ellipse cx="7" cy="27" rx="3.2" ry="5.2" transform="rotate(-22 7 27)" opacity=".60"/>
+          <ellipse cx="21" cy="27" rx="3.2" ry="5.2" transform="rotate(22 21 27)" opacity=".60"/>
+        </svg>
+        <div class="logo-text-wrap">
+          <span class="logo-name">La Mie Dorée</span>
+          <span class="logo-tagline">Boulangerie Artisanale · 1987</span>
+        </div>
+      </a>
+      <nav>
+        <a href="#specialites">Nos spécialités</a>
+        <a href="#horaires">Horaires</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="burger" id="burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#specialites">Nos spécialités</a>
+      <a href="#horaires">Horaires</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-tag fade-up">Boulangerie Artisanale · Fondée en 1987</p>
+      <h1 class="fade-up delay-1">L'art du pain,<br /><em>transmis de mains</em><br />en mains depuis 37 ans</h1>
+      <p class="hero-sub fade-up delay-2">Chaque matin, nous façonnons des pains et pâtisseries d'exception à partir d'ingrédients soigneusement sélectionnés. Parce que le bon pain mérite d'être pris au sérieux.</p>
+      <div class="hero-cta fade-up delay-3">
+        <a href="#specialites" class="btn btn-primary">Découvrir nos créations</a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Défiler</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section id="stats">
+    <div class="stats-grid">
+      <div class="stat-item reveal"><span class="stat-number">37</span><span class="stat-label">ans de savoir-faire</span></div>
+      <div class="stat-item reveal"><span class="stat-number">+40</span><span class="stat-label">recettes maison</span></div>
+      <div class="stat-item reveal"><span class="stat-number">3h</span><span class="stat-label">du matin, le fournil s'éveille</span></div>
+      <div class="stat-item reveal"><span class="stat-number">100%</span><span class="stat-label">farine Label Rouge</span></div>
+    </div>
+  </section>
+
+  <!-- SPÉCIALITÉS -->
+  <section id="specialites">
+    <div class="section-header reveal">
+      <span class="ornament">— ✦ —</span>
+      <p class="section-tag">L'excellence à chaque fournée</p>
+      <h2>Nos Créations</h2>
+      <p class="section-sub">Façonnées chaque matin à partir d'ingrédients sélectionnés auprès de nos producteurs partenaires.</p>
+    </div>
+
+    <div class="tabs-nav reveal">
+      <button class="tab-btn active" data-tab="pains">
+        <span class="tab-icon">
+          <svg viewBox="0 0 36 14" width="36" height="14" fill="none" stroke="currentColor" stroke-width="1.45" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M2.5 7 C2.5 4.2 5.5 2.5 18 2.5 C30.5 2.5 33.5 4.2 33.5 7 C33.5 9.8 30.5 11.5 18 11.5 C5.5 11.5 2.5 9.8 2.5 7Z"/>
+            <line x1="11.5" y1="3.1" x2="9.8" y2="10.9" stroke-width="1.1"/>
+            <line x1="18" y1="2.7" x2="16.3" y2="11.3" stroke-width="1.1"/>
+            <line x1="24.5" y1="3.1" x2="22.8" y2="10.9" stroke-width="1.1"/>
+          </svg>
+        </span>
+        <span class="tab-label">Pains</span>
+      </button>
+      <button class="tab-btn" data-tab="viennoiseries">
+        <span class="tab-icon">
+          <svg viewBox="0 0 36 18" width="36" height="18" fill="none" stroke="currentColor" stroke-width="1.45" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="2" y="2" width="32" height="14" rx="4"/>
+            <path d="M4.5 5.5 C8 5.5 8 9 4.5 9" stroke-width="1.1"/>
+            <path d="M4.5 9 C8 9 8 12.5 4.5 12.5" stroke-width="1.1"/>
+            <path d="M31.5 5.5 C28 5.5 28 9 31.5 9" stroke-width="1.1"/>
+            <path d="M31.5 9 C28 9 28 12.5 31.5 12.5" stroke-width="1.1"/>
+            <rect x="10" y="5.8" width="16" height="2.2" rx="0.8" fill="currentColor" stroke="none" opacity=".62"/>
+            <rect x="10" y="10" width="16" height="2.2" rx="0.8" fill="currentColor" stroke="none" opacity=".62"/>
+          </svg>
+        </span>
+        <span class="tab-label">Viennoiseries</span>
+      </button>
+      <button class="tab-btn" data-tab="gateaux">
+        <span class="tab-icon">
+          <svg viewBox="0 0 26 26" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.45" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="13" cy="13" r="11"/>
+            <circle cx="13" cy="13" r="9" fill="currentColor" stroke="none" opacity=".07"/>
+            <path d="M13 4.5 C10 4.5 10 10.5 13 11 C16 10.5 16 4.5 13 4.5 Z" fill="currentColor" stroke="none" opacity=".72"/>
+            <path d="M11.8 4.8 L11.3 3.5 M13 4.5 L13 3.2 M14.2 4.8 L14.7 3.5" stroke-width="1"/>
+            <path d="M9 14.5 C6 14.5 6 20.5 9 21 C12 20.5 12 14.5 9 14.5 Z" fill="currentColor" stroke="none" opacity=".72"/>
+            <path d="M7.8 14.8 L7.3 13.5 M9 14.5 L9 13.2 M10.2 14.8 L10.7 13.5" stroke-width="1"/>
+            <path d="M17 14.5 C14 14.5 14 20.5 17 21 C20 20.5 20 14.5 17 14.5 Z" fill="currentColor" stroke="none" opacity=".72"/>
+            <path d="M15.8 14.8 L15.3 13.5 M17 14.5 L17 13.2 M18.2 14.8 L18.7 13.5" stroke-width="1"/>
+          </svg>
+        </span>
+        <span class="tab-label">Gâteaux & Tartes</span>
+      </button>
+    </div>
+
+    <!-- PAINS (10) -->
+    <div class="tab-panel active" id="tab-pains">
+      <div class="menu-banner">
+        <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1200&h=320&q=85" alt="Nos pains artisanaux" loading="lazy"/>
+        <div class="menu-banner-caption">
+          <p class="menu-banner-tag">Façonnés chaque nuit</p>
+          <h3>Pains Artisanaux</h3>
+        </div>
+      </div>
+      <div class="menu-list">
+        <div class="menu-item">
+          <div class="menu-item-row">
+            <span class="menu-item-name">Pain de Campagne au Levain <span class="menu-item-tag">Signature</span></span>
+            <span class="menu-item-price">à partir de 3,20 €</span>
+          </div>
+          <p class="menu-item-desc">Croûte dorée, mie alvéolée légèrement acidulée. Fermentation lente de 18 heures.</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-row">
+            <span class="menu-item-name">Baguette Tradition <span class="menu-item-tag">Sans additif</span></span>
+            <span class="menu-item-price">1,20 €</span>
+          </div>
+          <p class="menu-item-desc">Façonnée à la main, sans additif. Croûte fine et craquante, mie crémeuse.</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-row">
+            <span class="menu-item-name">Pain aux Céréales <span class="menu-item-tag">Santé</span></span>
+            <span class="menu-item-price">2,80 €</span>
+          </div>
+          <p class="menu-item-desc">Sésame, tournesol, lin et pavot. Dense, nourrissant, goût de noisette.</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-row">
+            <span class="menu-item-name">Pain de Seigle <span class="menu-item-tag">Caractère</span></span>
+            <span class="menu-item-price">3,40 €</span>
+          </div>
+          <p class="menu-item-desc">Intense et rustique, idéal avec fromage affiné ou saumon fumé.</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-row">
+            <span class="menu-item-name">Pain aux Noix <span class="menu-item-tag">Artisan</span></span>
+            <span class="menu-item-price">3,80 €</span>
+          </div>
+          <p class="menu-item-desc">Cerneaux de noix du Périgord dans une pâte au levain. Idéal avec les fromages.</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-row">
+            <span class="menu-item-name">Pain Complet Bio <span class="menu-item-tag">Bio</span></span>
+            <span class="menu-item-price">2,60 €</span>
+          </div>
+          <p class="menu-item-desc">Farine T150 bio issue de l'agriculture raisonnée. Riche en fibres, pétri sur pierre.</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-row">
+            <span class="menu-item-name">Pain aux Olives <span class="menu-item-tag">Méditerranée</span></span>
+            <span class="menu-item-price">3,60 €</span>
+          </div>
+          <p class="menu-item-desc">Olives noires et vertes marinées à l'huile d'olive AOP, herbes de Provence.</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-row">
+            <span class="menu-item-name">Pain aux Figues & Noix <span class="menu-item-tag">Gourmand</span></span>
+            <span class="menu-item-price">4,20 €</span>
+          </div>
+          <p class="menu-item-desc">Figues séchées moelleuses et cerneaux de noix dans une pâte au levain légèrement sucrée.</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-row">
+            <span class="menu-item-name">Pain Nordique au Levain <span class="menu-item-tag">Spécial</span></span>
+            <span class="menu-item-price">4,00 €</span>
+          </div>
+          <p class="menu-item-desc">Mélange de seigle, épeautre et graines de carvi. Inspiration scandinave.</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-row">
+            <span class="menu-item-name">Pain Rustique à l'Ancienne <span class="menu-item-tag">Recette 1952</span></span>
+            <span class="menu-item-price">3,00 €</span>
+          </div>
+          <p class="menu-item-desc">Croûte épaisse et farineuse, mie dense et savoureuse. La recette du grand-père.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- VIENNOISERIES (8) -->
+    <div class="tab-panel" id="tab-viennoiseries">
+      <div class="menu-banner">
+        <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=1200&h=320&q=85" alt="Nos viennoiseries" loading="lazy"/>
+        <div class="menu-banner-caption">
+          <p class="menu-banner-tag">Pur beurre, feuilletage artisanal</p>
+          <h3>Viennoiseries</h3>
+        </div>
+      </div>
+      <div class="menu-list">
+        <div class="menu-item">
+          <div class="menu-item-row">
+            <span class="menu-item-name">Croissant Pur Beurre <span class="menu-item-tag">Incontournable</span></span>
+            <span class="menu-item-price">1,40 €</span>
+          </div>
+          <p class="menu-item-desc">27 couches de feuilletage, beurre AOP Charentes-Poitou. Croustillant, fondant au cœur.</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-row">
+            <span class="menu-item-name">Pain au Chocolat <span class="menu-item-tag">Coup de cœur</span></span>
+            <span class="menu-item-price">1,60 €</span>
+          </div>
+          <p class="menu-item-desc">Deux bâtons Valrhona 66% fondus dans un feuilletage aérien doré.</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-row">
+            <span class="menu-item-name">Brioche Tressée <span class="menu-item-tag">Maison</span></span>
+            <span class="menu-item-price">5,90 €</span>
+          </div>
+          <p class="menu-item-desc">Parfumée à la fleur d'oranger et aux zestes d'orange confits. Recette de famille.</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-row">
+            <span class="menu-item-name">Pain aux Raisins <span class="menu-item-tag">Classique</span></span>
+            <span class="menu-item-price">1,50 €</span>
+          </div>
+          <p class="menu-item-desc">Crème pâtissière vanille Bourbon, raisins macérés au rhum, pâte feuilletée.</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-row">
+            <span class="menu-item-name">Chausson aux Pommes <span class="menu-item-tag">Saison</span></span>
+            <span class="menu-item-price">1,60 €</span>
+          </div>
+          <p class="menu-item-desc">Pâte feuilletée dorée, compote de pommes à la cannelle et beurre salé de Bretagne.</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-row">
+            <span class="menu-item-name">Kouign-Amann <span class="menu-item-tag">Bretagne</span></span>
+            <span class="menu-item-price">2,80 €</span>
+          </div>
+          <p class="menu-item-desc">Pâte à pain, beurre salé AOP et caramel croustillant. Gourmandise bretonne rare.</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-row">
+            <span class="menu-item-name">Croissant aux Amandes <span class="menu-item-tag">Prestige</span></span>
+            <span class="menu-item-price">2,20 €</span>
+          </div>
+          <p class="menu-item-desc">Croissant fourré de crème d'amandes, parsemé d'amandes effilées caramélisées.</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-row">
+            <span class="menu-item-name">Petites Brioches Individuelles <span class="menu-item-tag">À la pièce</span></span>
+            <span class="menu-item-price">1,10 €</span>
+          </div>
+          <p class="menu-item-desc">Moelleuses et généreuses, idéales pour le goûter ou le petit-déjeuner en famille.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- GÂTEAUX & TARTES (16) -->
+    <div class="tab-panel" id="tab-gateaux">
+      <div class="menu-banner">
+        <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?auto=format&fit=crop&w=1200&h=320&q=85" alt="Nos gâteaux et tartes" loading="lazy"/>
+        <div class="menu-banner-caption">
+          <p class="menu-banner-tag">Pâtisserie fine & création maison</p>
+          <h3>Gâteaux & Tartes</h3>
+        </div>
+      </div>
+      <div class="menu-list">
+        <div class="menu-item">
+          <div class="menu-item-row">
+            <span class="menu-item-name">Tarte aux Fruits de Saison <span class="menu-item-tag">Saison</span></span>
+            <span class="menu-item-price">à partir de 3,80 €</span>
+          </div>
+          <p class="menu-item-desc">Pâte sablée, crème pâtissière onctueuse, fruits frais du marché. Limitée chaque matin.</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-row">
+            <span class="menu-item-name">Éclair au Chocolat <span class="menu-item-tag">Signature</span></span>
+            <span class="menu-item-price">2,60 €</span>
+          </div>
+          <p class="menu-item-desc">Pâte à choux légère, ganache chocolat noir 70%, glaçage satiné miroir.</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-row">
+            <span class="menu-item-name">Mille-Feuille Vanille <span class="menu-item-tag">Prestige</span></span>
+            <span class="menu-item-price">3,20 €</span>
+          </div>
+          <p class="menu-item-desc">Feuilletage caramélisé, crème diplomate vanille Madagascar, glaçage marbré.</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-row">
+            <span class="menu-item-name">Tarte au Citron Meringuée <span class="menu-item-tag">Coup de cœur</span></span>
+            <span class="menu-item-price">3,50 €</span>
+          </div>
+          <p class="menu-item-desc">Curd citron de Menton, meringue italienne dorée à la flamme. Acidité parfaite.</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-row">
+            <span class="menu-item-name">Paris-Brest <span class="menu-item-tag">Classique</span></span>
+            <span class="menu-item-price">3,80 €</span>
+          </div>
+          <p class="menu-item-desc">Couronne de choux, crème pralinée aux noisettes du Piémont, amandes caramélisées.</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-row">
+            <span class="menu-item-name">Macarons Assortis <span class="menu-item-tag">Élégance</span></span>
+            <span class="menu-item-price">1,90 € / pièce</span>
+          </div>
+          <p class="menu-item-desc">Coques craquantes, garnitures ganaches et curds. Framboise, pistache, caramel, vanille.</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-row">
+            <span class="menu-item-name">Forêt Noire <span class="menu-item-tag">Gourmand</span></span>
+            <span class="menu-item-price">4,50 €</span>
+          </div>
+          <p class="menu-item-desc">Biscuit chocolat, chantilly légère, cerises griottines au kirsch. Un monument.</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-row">
+            <span class="menu-item-name">Financier Beurre Noisette <span class="menu-item-tag">Intemporel</span></span>
+            <span class="menu-item-price">1,80 €</span>
+          </div>
+          <p class="menu-item-desc">Beurre noisette, poudre d'amandes, blanc d'œuf monté. Moelleux incomparable.</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-row">
+            <span class="menu-item-name">Opéra <span class="menu-item-tag">Excellence</span></span>
+            <span class="menu-item-price">4,80 €</span>
+          </div>
+          <p class="menu-item-desc">Biscuit Joconde, ganache chocolat Araguani, crème au beurre café. Le grand classique.</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-row">
+            <span class="menu-item-name">Fondant au Chocolat <span class="menu-item-tag">Indulgence</span></span>
+            <span class="menu-item-price">3,90 €</span>
+          </div>
+          <p class="menu-item-desc">Cœur coulant chocolat noir Guanaja 70%, servi avec coulis de framboise maison.</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-row">
+            <span class="menu-item-name">Religieuse au Café <span class="menu-item-tag">Tradition</span></span>
+            <span class="menu-item-price">2,90 €</span>
+          </div>
+          <p class="menu-item-desc">Double chou à la crème au café, glaçage fondant et rosace de chantilly.</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-row">
+            <span class="menu-item-name">Chou Chantilly <span class="menu-item-tag">Légèreté</span></span>
+            <span class="menu-item-price">2,40 €</span>
+          </div>
+          <p class="menu-item-desc">Pâte à choux croustillante, chantilly à la vanille de Tahiti, craquelin doré.</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-row">
+            <span class="menu-item-name">Entremet Chocolat-Framboise <span class="menu-item-tag">Édition limitée</span></span>
+            <span class="menu-item-price">4,20 €</span>
+          </div>
+          <p class="menu-item-desc">Gelée de framboise Mara des Bois, mousse chocolat noir. Notre création signature.</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-row">
+            <span class="menu-item-name">Gâteau Basque <span class="menu-item-tag">Terroir</span></span>
+            <span class="menu-item-price">3,60 €</span>
+          </div>
+          <p class="menu-item-desc">Pâte sablée épaisse, crème pâtissière à la vanille ou confiture de cerises noires.</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-row">
+            <span class="menu-item-name">Tarte Caramel Beurre Salé <span class="menu-item-tag">Gourmand</span></span>
+            <span class="menu-item-price">3,80 €</span>
+          </div>
+          <p class="menu-item-desc">Pâte sablée noisette, caramel coulant au beurre salé, pralin croustillant.</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-row">
+            <span class="menu-item-name">Macarons Parfums Rares <span class="menu-item-tag">Nouveauté</span></span>
+            <span class="menu-item-price">2,50 € / pièce</span>
+          </div>
+          <p class="menu-item-desc">Yuzu, rose-litchi, violette-cassis, truffe noire. Collection saisonnière.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- HORAIRES -->
+  <section id="horaires">
+    <div class="horaires-wrap reveal">
+      <div class="horaires-header">
+        <span class="horaires-ornament">✦</span>
+        <p class="section-tag" style="color:var(--gold-light)">Venez nous rendre visite</p>
+        <h2 style="color:var(--white)">Horaires d'ouverture</h2>
+        <p class="horaires-sub">Le fournil s'éveille à 3h du matin pour que votre pain soit frais dès l'ouverture.</p>
+      </div>
+      <div class="horaires-right">
+        <ul class="horaires-list">
+          <li data-day="1"><span class="h-day">Lundi</span><span class="h-slots"><span class="h-slot">7h – 13h30</span><span class="h-slot">15h30 – 19h30</span></span></li>
+          <li data-day="2" class="closed"><span class="h-day">Mardi</span><span class="h-slots"><span class="h-slot h-slot--closed">Fermé</span></span></li>
+          <li data-day="3"><span class="h-day">Mercredi</span><span class="h-slots"><span class="h-slot">7h – 13h30</span><span class="h-slot">15h30 – 19h30</span></span></li>
+          <li data-day="4"><span class="h-day">Jeudi</span><span class="h-slots"><span class="h-slot">7h – 13h30</span><span class="h-slot">15h30 – 19h30</span></span></li>
+          <li data-day="5"><span class="h-day">Vendredi</span><span class="h-slots"><span class="h-slot">7h – 13h30</span><span class="h-slot">15h30 – 19h30</span></span></li>
+          <li data-day="6"><span class="h-day">Samedi</span><span class="h-slots"><span class="h-slot">6h30 – 13h</span><span class="h-slot">15h – 19h</span></span></li>
+          <li data-day="0"><span class="h-day">Dimanche</span><span class="h-slots"><span class="h-slot">7h – 13h</span></span></li>
+        </ul>
+        <div class="horaires-note"><span class="dot-live"></span><span id="horaires-status">Ouvert maintenant — Ferme à 19h30</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="contact-inner reveal">
+      <div class="contact-text-col">
+        <span class="ornament" style="text-align:left">— ✦ —</span>
+        <p class="section-tag">Nous trouver</p>
+        <h2>Adresse &amp; Contact</h2>
+        <p class="contact-intro">Situés au cœur d'Orléans, nous vous accueillons avec le sourire et des créations fraîches du jour.</p>
+        <div class="contact-info">
+          <div class="contact-row">
+            <span class="contact-icon">
+              <svg viewBox="0 0 12 16" width="13" height="18" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M6 1C3.2 1 1 3.2 1 6c0 3.8 5 9 5 9s5-5.2 5-9c0-2.8-2.2-5-5-5z"/>
+                <circle cx="6" cy="6" r="1.7" fill="currentColor" opacity=".3"/>
+              </svg>
+            </span>
+            <div><strong>12 rue du Four Bannier</strong><span>45000 Orléans, France</span></div>
+          </div>
+          <div class="contact-row">
+            <span class="contact-icon">
+              <svg viewBox="0 0 16 16" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M3 1.5C3 1.5 1.5 3 1.5 5.5c0 5 4 8.5 9 9 2.5 0 4-1.5 4-1.5l-2-3-2 1C9 11.5 6.5 9 6.5 7.5l1-2z"/>
+              </svg>
+            </span>
+            <div><strong>02 38 45 67 89</strong><span>Du mercredi au dimanche</span></div>
+          </div>
+          <div class="contact-row">
+            <span class="contact-icon">
+              <svg viewBox="0 0 18 14" width="20" height="16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="1" y="1" width="16" height="12" rx="2"/>
+                <path d="M1 3.5L9 8.5L17 3.5"/>
+              </svg>
+            </span>
+            <div><strong>bonjour@lamiedoree.fr</strong><span>Commandes &amp; événements</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-map-col">
+        <iframe
+          src="https://maps.google.com/maps?q=12+rue+du+Four+Bannier,+45000+Orl%C3%A9ans,+France&z=16&output=embed"
+          class="contact-map"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="La Mie Dorée sur Google Maps">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <svg viewBox="0 0 28 46" width="14" height="22" fill="currentColor" style="color:var(--gold);opacity:.75;">
+            <rect x="12.5" y="16" width="3" height="28" rx="1.5"/>
+            <ellipse cx="14" cy="9" rx="4.5" ry="7"/>
+            <ellipse cx="8" cy="18" rx="4" ry="6.5" transform="rotate(-32 8 18)" opacity=".85"/>
+            <ellipse cx="20" cy="18" rx="4" ry="6.5" transform="rotate(32 20 18)" opacity=".85"/>
+          </svg>
+          <span class="logo-name">La Mie Dorée</span>
+        </div>
+        <p>Boulangerie artisanale au cœur d'Orléans.<br />Fondée en 1987, perpétuée par Sophie Durand.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Navigation</h4>
+        <a href="#specialites">Nos créations</a>
+        <a href="#horaires">Horaires</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-social">
+        <h4>Suivez-nous</h4>
+        <p>Retrouvez nos créations du jour et les coulisses du fournil.</p>
+        <div class="social-links">
+          <a href="#" class="social-btn">Instagram</a>
+          <a href="#" class="social-btn">Facebook</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 La Mie Dorée — Boulangerie Artisanale · Tous droits réservés</p>
+      <div class="footer-legal-links">
+        <a href="#" class="legal-link" data-modal="modal-mentions">Mentions légales</a>
+        <span>·</span>
+        <a href="#" class="legal-link" data-modal="modal-confidentialite">Politique de confidentialité</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MODAL MENTIONS LÉGALES -->
+  <div class="legal-modal" id="modal-mentions" role="dialog" aria-modal="true" aria-label="Mentions légales">
+    <div class="legal-modal-inner">
+      <button class="legal-modal-close" aria-label="Fermer">✕</button>
+      <h2>Mentions Légales</h2>
+      <div class="legal-content">
+        <h3>Éditeur du site</h3>
+        <p>La Mie Dorée — Boulangerie Artisanale<br>12 rue du Four Bannier, 45000 Orléans<br>Tél. : 02 38 45 67 89<br>Email : bonjour@lamiedoree.fr<br>SIRET : 123 456 789 00012<br>Forme juridique : Entreprise individuelle</p>
+        <h3>Responsable de publication</h3>
+        <p>Sophie Durand, Gérante de La Mie Dorée.</p>
+        <h3>Hébergement</h3>
+        <p>Ce site est hébergé en local à des fins de démonstration. Pour une mise en ligne, l'hébergeur devra être renseigné ici avec ses coordonnées complètes.</p>
+        <h3>Propriété intellectuelle</h3>
+        <p>L'ensemble du contenu de ce site (textes, images, logos, conception graphique) est la propriété exclusive de La Mie Dorée ou de ses partenaires. Toute reproduction, représentation ou diffusion, en tout ou partie, est interdite sans autorisation écrite préalable.</p>
+        <h3>Responsabilité</h3>
+        <p>La Mie Dorée s'efforce d'assurer l'exactitude des informations publiées sur ce site. Cependant, elle ne peut garantir l'exhaustivité et la mise à jour permanente de ces informations et décline toute responsabilité pour d'éventuelles inexactitudes.</p>
+        <h3>Droit applicable</h3>
+        <p>Le présent site est soumis au droit français. Tout litige relatif à son utilisation sera soumis à la compétence des tribunaux français.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL POLITIQUE DE CONFIDENTIALITÉ -->
+  <div class="legal-modal" id="modal-confidentialite" role="dialog" aria-modal="true" aria-label="Politique de confidentialité">
+    <div class="legal-modal-inner">
+      <button class="legal-modal-close" aria-label="Fermer">✕</button>
+      <h2>Politique de Confidentialité</h2>
+      <div class="legal-content">
+        <h3>Responsable du traitement</h3>
+        <p>La Mie Dorée, représentée par Sophie Durand, 12 rue du Four Bannier, 45000 Orléans — bonjour@lamiedoree.fr</p>
+        <h3>Données collectées</h3>
+        <p>Ce site vitrine ne collecte aucune donnée personnelle automatiquement. Aucun formulaire de saisie, aucun compte utilisateur. Si vous nous contactez par email ou téléphone, seules les informations nécessaires à votre demande sont traitées et conservées le temps strictement nécessaire.</p>
+        <h3>Cookies</h3>
+        <p>Ce site n'utilise aucun cookie de traçage, de publicité ou d'analyse de comportement. Seuls des cookies techniques essentiels au bon fonctionnement de la navigation peuvent être générés par votre navigateur.</p>
+        <h3>Vos droits (RGPD)</h3>
+        <p>Conformément au Règlement Général sur la Protection des Données (RGPD — UE 2016/679) et à la loi Informatique et Libertés, vous disposez des droits suivants :</p>
+        <p>— Droit d'accès à vos données<br>— Droit de rectification<br>— Droit à l'effacement (« droit à l'oubli »)<br>— Droit à la limitation du traitement<br>— Droit à la portabilité<br>— Droit d'opposition</p>
+        <p>Pour exercer ces droits, contactez-nous à : <strong>bonjour@lamiedoree.fr</strong></p>
+        <h3>Réclamation</h3>
+        <p>Si vous estimez que vos droits ne sont pas respectés, vous pouvez introduire une réclamation auprès de la CNIL : <strong>www.cnil.fr</strong></p>
+        <h3>Mise à jour</h3>
+        <p>Cette politique de confidentialité peut être mise à jour à tout moment. Date de dernière mise à jour : mai 2025.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="style.js"></script>
+</body>
+</html>
